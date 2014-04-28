@@ -14,7 +14,7 @@ require(['jquery', 'lodash', 'routerpwn'], function($, _, pwn) {
   $(document).ready(function() {
 
     $(".exploit-run").on('click', function(event) {
-      var action = $(event.target).attr('id') || null;
+      var action = $(event.target).data('id') || null;
 
       if (action && action.split(":").length === 2) {
         console.log("Exploit '" + action + "' clicked!");
