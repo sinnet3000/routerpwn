@@ -33,8 +33,6 @@ define(function(require) {
       var exploit = params[1];
 
       console.log("Executing " + company + ":" + exploit);
-      if (options) { console.log("With options:", options) }
-
       this.modules[company][exploit](options || {});
     }
   };

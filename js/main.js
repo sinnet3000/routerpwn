@@ -19,7 +19,8 @@ require(['jquery', 'lodash', 'routerpwn'], function($, _, pwn) {
       if (action && action.split(":").length === 2) {
         console.log("Exploit '" + action + "' clicked!");
 
-        pwn.run(action);
+     var options = $(event.target).data('options') || null
+     pwn.run(action, options);
       }
 
     });

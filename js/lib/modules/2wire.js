@@ -2,14 +2,13 @@ define(['util'], function(util) {
 
   return {
     name: '2Wire',
-    test: function(options) {
+  
+   test: function(options) {
       console.log("Running 'test' exploit for " + this.name + " using " + util.version);
-      if (options) { console.log("With options", options) }
-    },
+      if (options) { console.log("With options from test", options) }
 
-   test1: function(options) {
-      console.log("Running 'test' exploit for " + this.name + " using " + util.version);
-      if (options) { console.log("With options", options) }
+      console.log("Grabbing ip from 2wire.js: ", options.ip)
+
     }
 
   
