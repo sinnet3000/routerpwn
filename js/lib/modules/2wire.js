@@ -7,7 +7,7 @@ define(['util'], function(util) {
       console.log("Running 'test' exploit for " + this.name + " using " + util.version);
       if (options) { console.log("With options from test", options) }
 
-      console.log("Grabbing ip from 2wire.js: ", options.ip)
+      console.log("Grabbing ip from data-options html tag, accesible in 2wire.js as options.ip: ", options.ip)
 
     }
 
