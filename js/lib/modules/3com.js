@@ -1,9 +1,9 @@
 define(['util'], function(util) {
 
   return {
-    name: '3Com',
-    test: function(options) {
-      console.log("Running 'test' exploit for " + this.name + " using " + util.version);
+    company_name: '3Com',
+    1: function(options, exploit_name) {
+      console.log("Running " + exploit_name + " exploit for " + this.company_name + " using " + util.version);
       if (options) { console.log(options) }
     }
   

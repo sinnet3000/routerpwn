@@ -20,7 +20,7 @@ define(function(require) {
     version: '2',
     modules: modules,
 
-    run: function(action, options) {
+    run: function(action, options, exploit_name) {
       if (!action || action.split(":").length !== 2) {
         console.error("Expected valid action, got", action);
         return;
@@ -33,7 +33,7 @@ define(function(require) {
       var exploit = params[1];
 
       console.log("Executing " + company + ":" + exploit);
-      this.modules[company][exploit](options || {});
+      this.modules[company][exploit](options || {}, exploit_name);
     }
   };
 });
